@@ -20,19 +20,21 @@ It is used in [Daypage](http://www.daypager.com).
 ## Usage
 Initialize it on any div:
 
-'''
+```html
+<script src="hdatepicker.js"></script>
 <div id="hDatepicker"></div>
-'''
+```
 
-'''
-hDatepicker( $("#hDatepicker") ):
-'''
+```javascript
+hDatepicker( $("#hDatepicker") );
+```
 
 Provide some actions for what happens when a date is selected:
-'''
+
+```javascript
 hDatepicker( $("#hDatepicker"), {
   onDateSelect: function(date){
     //Do stuff
   }
 });
-'''
+```
