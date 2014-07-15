@@ -22,21 +22,21 @@ drawMonthRow = function(selectedDate, viewDate){
     monthRow = "<div id='monthRow' >";
 
     //display the year in its own h2
-    monthRow += "<h2 id='hDateYear'>" + viewDate.getFullYear() + "</h2>";
+    monthRow += "<div id='hDateYear'>" + viewDate.getFullYear() + "</div>";
 
     //left arrow
-    monthRow += '<button type="button" class="btn changeMonth" data-inc=-1><span class="glyphicon glyphicon-chevron-left"></span></button>';
+    monthRow += '<button type="button" class="btn changeMonth" data-inc=-1><</button>';
     //right arrow
-    monthRow += '<button type="button" class="btn changeMonth" data-inc=1><span class="glyphicon glyphicon-chevron-right"></span></button>';
+    monthRow += '<button type="button" class="btn changeMonth" data-inc=1>></button>';
 
     //display the currently viewed month
-    monthRow += "<h2 id='monthName'>" + monthNames[ viewDate.getMonth() ] + "</h2>";
+    monthRow += "<div id='monthName'>" + monthNames[ viewDate.getMonth() ] + "</div>";
 
     
     monthRow += "</div>";
 
 
-    hDiv.innerHTML = hDiv.innerHTML + monthRow;
+    hDiv.append(monthRow);
 }
 
 

@@ -15,61 +15,91 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/sponrad/hdatepicker">View on GitHub</a>
+      <header class="inner">
+        <a id="forkme_banner" href="https://github.com/sponrad/hdatepicker">View on GitHub</a>
 
-          <h1 id="project_title">hDatePicker</h1>
-          <h2 id="project_tagline">hDatePicker - horizontal javascript datepicker</h2>
+        <h1 id="project_title">hDatePicker</h1>
+        <h2 id="project_tagline">hDatePicker - horizontal javascript datepicker</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/sponrad/hdatepicker/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/sponrad/hdatepicker/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+        <section id="downloads">
+          <a class="zip_download_link" href="https://github.com/sponrad/hdatepicker/zipball/master">Download this project as a .zip file</a>
+          <a class="tar_download_link" href="https://github.com/sponrad/hdatepicker/tarball/master">Download this project as a tar.gz file</a>
+        </section>
+      </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h2>
-<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h2>
+	  <a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About</h2>
 
-<p>hDatePicker is a javascript library that creates a datepicker that lays out flat horizontal and is responsive. </p>
+	<p>hDatePicker is a javascript library that creates a datepicker that lays out flat horizontal and is responsive. </p>
 
-<p>It is used in <a href="http://www.daypager.com">Daypage</a>.</p>
+	<p>It is used in <a href="http://www.daypager.com">Daypage</a>.</p>
 
-<h2>
-<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+	<h2>
+	  <a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
 
-<ul>
-<li>Automatic current day selected</li>
-<li>Forward and backward month buttons</li>
-<li>Days in month are calculated</li>
-<li>Adds CSS classes for most of the elements</li>
-<li>CSS class for current day</li>
-<li>CSS class for selected day</li>
-<li>CSS class for weekend days, for styling</li>
-</ul><h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+	<ul>
+	  <li>Automatic current day selected</li>
+	  <li>Forward and backward month buttons</li>
+	  <li>Days in month are calculated</li>
+	  <li>Adds CSS classes for most of the elements</li>
+	  <li>CSS class for current day</li>
+	  <li>CSS class for selected day</li>
+	  <li>CSS class for weekend days, for styling</li>
+	</ul><h2>
+	  <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>Initialize it on any div:</p>
+	  <p>Initialize it on any div:</p>
 
-<div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"hdatepicker.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hDatepicker"</span><span class="nt">&gt;&lt;/div&gt;</span>
-</pre></div>
+	  <div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"hdatepicker.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+	    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hDatepicker"</span><span class="nt">&gt;&lt;/div&gt;</span>
+	  </pre></div>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">hDatepicker</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#hDatepicker"</span><span class="p">)</span> <span class="p">);</span>
-</pre></div>
+	  <div class="highlight highlight-javascript"><pre><span class="nx">hDatepicker</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#hDatepicker"</span><span class="p">)</span> <span class="p">);</span>
+	  </pre></div>
 
-<p>Provide some actions for what happens when a date is selected:</p>
+	  <p>Provide some actions for what happens when a date is selected:</p>
 
-<div class="highlight highlight-javascript"><pre><span class="nx">hDatepicker</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#hDatepicker"</span><span class="p">),</span> <span class="p">{</span>
-  <span class="nx">onDateSelect</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">date</span><span class="p">){</span>
-    <span class="c1">//Do stuff</span>
-  <span class="p">}</span>
-<span class="p">});</span>
-</pre></div>
+	  <div class="highlight highlight-javascript"><pre><span class="nx">hDatepicker</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#hDatepicker"</span><span class="p">),</span> <span class="p">{</span>
+	    <span class="nx">onDateSelect</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">date</span><span class="p">){</span>
+	    <span class="c1">//Do stuff</span>
+	    <span class="p">}</span>
+	    <span class="p">});</span>
+	  </pre></div>
+
+	  <h2><a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+	  <div id="hdatepicker"></div>
+	  <div id="output"></div>
+	  <style>
+	   .dateButton{
+	     border: solid black 1px;
+	     margin: 3px -1px 3px -1px;
+	     background: white;
+	     width: 34px;
+	     
+	   }
+
+	   .selected {
+	     border: solid black 4px;
+	     margin: 0px;
+	   }
+
+	   .weekend {
+	     background: #dcdcdc;
+	   }
+
+	   .today {
+	     background: #8db9df;
+	   }
+	  </style>
+	
       </section>
+
+
     </div>
 
     <!-- FOOTER  -->
@@ -80,7 +110,16 @@
       </footer>
     </div>
 
-    
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="hdatepicker.js"></script>
+    <script>
+     $(document).ready( function(){
+       hDatepicker( $("#hdatepicker"), {
+	 onDateSelect: function(date){
+	   $("#output").html(date);
+	 }
+       });
+     });
+    </script>
   </body>
 </html>
