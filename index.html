@@ -55,19 +55,19 @@
 	  <p>Initialize it on any div:</p>
 
 	  <div class="highlight highlight-html"><pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"hdatepicker.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-	    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hDatepicker"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"hDatepicker"</span><span class="nt">&gt;&lt;/div&gt;</span>
 	  </pre></div>
 
-	  <div class="highlight highlight-javascript"><pre><span class="nx">hDatepicker</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#hDatepicker"</span><span class="p">)</span> <span class="p">);</span>
+	  <div class="highlight highlight-javascript"><pre><span class="nx">hDatepicker</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">"#hDatepicker"</span><span class="p">)</span><span class="p">);</span>
 	  </pre></div>
 
 	  <p>Provide some actions for what happens when a date is selected:</p>
 
-	  <div class="highlight highlight-javascript"><pre><span class="nx">hDatepicker</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s2">"#hDatepicker"</span><span class="p">),</span> <span class="p">{</span>
-	    <span class="nx">onDateSelect</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">date</span><span class="p">){</span>
-	    <span class="c1">//Do stuff</span>
-	    <span class="p">}</span>
-	    <span class="p">});</span>
+	  <div class="highlight highlight-javascript"><pre><span class="nx">hDatepicker</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s2">"#hDatepicker"</span><span class="p">),</span> <span class="p">{</span>
+  <span class="nx">onDateSelect</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">date</span><span class="p">) {</span>
+    <span class="c1">// do stuff</span>
+  <span class="p">}</span>
+<span class="p">});</span>
 	  </pre></div>
 
 	  <h2><a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
@@ -80,7 +80,6 @@
 	     margin: 3px -1px 3px -1px;
 	     background: white;
 	     width: 34px;
-	     
 	   }
 
 	   .selected {
@@ -96,7 +95,6 @@
 	     background: #8db9df;
 	   }
 	  </style>
-	
       </section>
 
 
@@ -113,13 +111,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="hdatepicker.js"></script>
     <script>
-     $(document).ready( function(){
-       hDatepicker( $("#hdatepicker"), {
-	 onDateSelect: function(date){
-	   $("#output").html(date);
-	 }
-       });
-     });
+      $(document).ready( function(){
+        hDatepicker( $("#hdatepicker"), {
+	        onDateSelect: function(date){
+	          $("#output").html(date);
+	        }
+        });
+      });
     </script>
   </body>
 </html>
